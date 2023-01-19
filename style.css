@@ -38,6 +38,11 @@ nav ul li{
 }
 .container{
   min-height: 72vh;
+  background-color: black;
+  color: white;
+  display: flexbox;
+  margin: 23px auto;
+  width: 50%;
 }
 .bottom{
   position: sticky;
@@ -48,6 +53,7 @@ nav ul li{
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-direction: column;
   margin: 12px 0;
 }
