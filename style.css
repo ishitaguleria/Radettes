@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela:ital,wght@1,300&Rounddisplay=swap');
 
 body{
-  background-image:antiquewhite; 
+  background-color: white; 
 }
 *{
   margin: 0;
@@ -25,6 +25,14 @@ nav ul li{
   padding: 0 25px;
   float: left;
 }
+.left{
+  padding: 0 25px;
+  float: left;
+}
+.right{
+  padding: 0 25px;
+  float: right;
+}
 .brand img{
   width: 55px;
   padding: 0 8px ;
@@ -37,35 +45,34 @@ nav ul li{
   font-size: 1.2rem;
 }
 .container{
-  min-height: 72vh;
+  min-height: 70vh;
   background-color: black;
   color: white;
-  display: flexbox;
-  margin: 23px auto;
+  display: flex;
+  margin: 85px auto;
   width: 50%;
+  
 }
 .bottom{
-  position: sticky;
-  height: 98px;
+  position:sticky;
+  height: 100px;
   background-color: black;
-  color: white;
+  color:white;
   bottom:0;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
-  margin: 12px 0;
+  margin: 8px 0;
 }
 .icons{
-  margin-bottom:0px;
-  padding: 5px;
+  margin-top:5px;
 }
-i{
-  padding: 5px;
+.icons i{
+  cursor: pointer;
+  padding: 8px;
 }
 #myProgressBar{
   width: 80vw;
-  margin-top: 22px;
-  padding: 1px;
 }
