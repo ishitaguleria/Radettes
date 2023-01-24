@@ -3,17 +3,19 @@
 
 body{
   background-color: white; 
+  display: grid;
 }
 *{
   margin: 0;
   padding: 0;
+  
 }
 nav{
   font-family:'Ubuntu';
   padding: 4px;
 }
 nav ul{
-  display: flex;
+  
   padding: 2px;
   list-style-type: none;
   height: 55px;
@@ -22,14 +24,6 @@ nav ul{
   align-items: center;
 }
 nav ul li{
-  padding: 0 25px;
-  float: left;
-}
-.left{
-  padding: 0 25px;
-  float: left;
-}
-.right{
   padding: 0 25px;
   float: right;
 }
@@ -44,18 +38,18 @@ nav ul li{
   font-weight: bolder;
   font-size: 1.2rem;
 }
-.container{
+.containerpopup{
   min-height: 70vh;
   background-color: black;
   color: white;
   display: flex;
   margin: 85px auto;
-  width: 50%;
+  width: 70%;
   
 }
 .bottom{
   position:sticky;
-  height: 100px;
+  height: 130px;
   background-color: black;
   color:white;
   bottom:0;
@@ -64,14 +58,36 @@ nav ul li{
   align-items: center;
   text-align: center;
   flex-direction: column;
-  margin: 8px 0;
+  
 }
 .icons{
-  margin-top:5px;
+  display:inline-flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items: center;
 }
 .icons i{
   cursor: pointer;
-  padding: 8px;
+  padding: 10px;
+}
+
+.moreicons{
+  display:flex;
+  flex-direction: row;
+
+}
+.moreicons p{
+  text-align:left;
+  width: 10vw; ;
+}
+.moreicons i{
+  align-items: right;
+  justify-content: center;
+  align-items: right;
+  text-align:right;
+  width: 90vw; 
+  padding-right: 5px ;
+  margin-bottom: 2px;
 }
 #myProgressBar{
   width: 80vw;

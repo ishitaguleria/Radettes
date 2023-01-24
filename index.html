@@ -10,6 +10,9 @@
         <title>Radettes</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -19,37 +22,40 @@
         
         
 
-        <div>
+       
         <nav>
             
-            <div class="left">
+            
             <ul>
-                <li class="brand"><img src="images/logo-modified.png" alt= "Radettes"/> Radettes </li>
+                <li class="brand" style="float: left;"><img src="images/logo-modified.png" alt= "Radettes"/> Radettes </li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#home">Home</a></li>
             </ul>
-            </div>
-            <div class="right">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-        </nav>
-    </div>
-    <div class="container">
-        <h1>Young,Dumb&Broke</h1>
         
+        </nav>
+    <div class="container">
+
+    </div>
+    <div class="containerpopup">
+        <h1>Young,Dumb&Broke</h1>
     </div>
     <div class="bottom">
         <input type="range" name="range" id="myProgressBar" min="0" max="100">
         <div class="icons">
-            <i class="fa-solid fa-shuffle" style="color: white;"></i>
+            <i class="fas fa-solid fa-shuffle" style="color: white;" onclick="changeColor(this)"></i>
             <i class="fa-solid fa-2x fa-backward" style="color: white;"></i>
-            <i class="fa-regular fa-3x fa-circle-play" style="color: white;"></i>
+            <i class="fa-regular fa-3x fa-circle-play" style="color: white;" onclick="changeIcon(this)"></i>
             <i class="fa-solid fa-2x fa-forward" style="color: white;"></i>
-            <i class="fa-solid fa-1x fa-repeat" style="color: white;"></i>        </div>
+            <i class="fas fa-solid fa-1x fa-repeat" style="color: white;"></i>      
+        </div>
+        <div class="moreicons">
+            <p>Young,dumb&broke</p>
+            <i class="fa-solid fa-volume-high" style="color: white;"></i>
+            <input type="range" name="range" id="volumebar" min="0" max="100">
+        </div>
     </div>
     <script src="https://kit.fontawesome.com/40a1782265.js" crossorigin="anonymous"></script>
-    <script src="" async defer></script>
+    <script src="working.js" async defer></script>
     </body>
 </html>
