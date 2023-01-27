@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela:ital,wght@1,300&Rounddisplay=swap');
-
-body{
-  background-color: white; 
-  display: grid;
+html{
+  min-height:100%;
 }
+body{
+    display: flex;
+    background-image: radial-gradient(circle, #1d9891, #209a94, #239d97, #269f9b, #29a29e, #279895, #268f8c, #248583, #1d6e6c, #175755, #104140, #0a2d2c);    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding:2px;
+    background-attachment: fixed;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -12,34 +20,41 @@ body{
 }
 nav{
   font-family:'Ubuntu';
-  padding: 4px;
+  width:100vw;
+  background-color: black;
+  display: block;
+  height: 60px;
+  margin: 4px;
 }
 nav ul{
-  
-  padding: 2px;
+  display: revert;
   list-style-type: none;
-  height: 55px;
-  background-color: rgb(1, 24, 19);
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 2px;
+  margin-inline-end: 2px;
+  padding-inline-start: 40px;
   color: white;
-  align-items: center;
+  
 }
 nav ul li{
   padding: 0 25px;
   float: right;
 }
 .brand img{
-  width: 55px;
-  padding: 0 8px ;
+  width: 74px;
+  padding: 0 6px ;
   align-items: left;
 }
 .brand {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   font-weight: bolder;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  padding: 1px;
 }
 .containerpopup{
-  min-height: 70vh;
+  min-height: 85vh;
   background-color: black;
   color: white;
   display: flex;
@@ -58,7 +73,8 @@ nav ul li{
   align-items: center;
   text-align: center;
   flex-direction: column;
-  
+  width: 100vw;
+  margin: 8px;
 }
 .icons{
   display:inline-flex;
@@ -74,20 +90,22 @@ nav ul li{
 .moreicons{
   display:flex;
   flex-direction: row;
-
+  width:98vw ;
+  
+  
 }
 .moreicons p{
   text-align:left;
-  width: 10vw; ;
 }
 .moreicons i{
   align-items: right;
   justify-content: center;
   align-items: right;
   text-align:right;
-  width: 90vw; 
-  padding-right: 5px ;
+  width: 88vw; 
+  padding-right: 5px;
   margin-bottom: 2px;
+  
 }
 #myProgressBar{
   width: 80vw;
